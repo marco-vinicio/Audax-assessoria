@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-navegacao {
+    padding: 1em 2em;
+}
+
+.link-navegacao {
+    color: #2c3e50;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 2em;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.link-navegacao:hover {
+    color: #316eac;
+    transform: scale(1.1);
+}
+
+.banner-principal {
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.banner-principal h1,
+.banner-principal p {
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+.secao-hero {
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.secao-hero h1,
+.secao-hero h2,
+.secao-hero p {
+    color: #333;
+}
+
+.titulo-destaque {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.botao-gerar-boleto {
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #00000081;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    height: 100%;
+    margin-top: 20px;
+    padding: .8em;
+}
+
+.secao-servicos,
+.secao-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.3em;
+}
+
+.cartao-servico {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 300px;
+    margin: 10px;
+    padding: 1.3em;
+    text-align: center;
+}
+
+.cartao-servico h3,
+.cartao-servico p {
+    color: #333;
+}
+
+.secao-valores {
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+}
+
+.titulo-principal {
+    color: #333;
+    text-align: center;
+}
+
+.blocos {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+.bloco-missao-visao {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    max-width: 700px;
+    width: 100%;
+}
+
+.bloco-missao-visao h2,
+.bloco-missao-visao p {
+    color: #333;
+}
+
+.bloco-missao-visao p {
+    font-weight: 400;
+}
+
+.imagem-sobre-equipe {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.secao-contato {
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.secao-contato h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.secao-contato p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.botao-zap {
+    display: flex;
+    margin: auto;
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    z-index: 1000;
+    box-shadow: #00000026 0 4px 12px;
+}
+
+
+footer {
+    background-color: #34495e;
+    padding: .8em;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .banner-principal h1 {
+        font-size: 1.5em;
+    }
+
+    .secao-servicos,
+    .secao-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao-servico {
+        width: 90%;
+    }
+
+    .imagem-sobre-equipe {
+        width: 90%;
+    }
+
+    .secao-contato {
+        margin: 0;
+        margin-left: 0;
+    }
+
+    .titulo-contato,
+    .texto-contato {
+        margin-left: 0;
+    }
+}
